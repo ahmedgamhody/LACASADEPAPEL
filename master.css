@@ -1,0 +1,164 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(cover/MONEY\ HIEST.png.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 5px 10px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  background-image: linear-gradient(170deg, white 30%, #ff0000, black);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+.links {
+  width: 48%;
+  margin-left: 130px;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  border-radius: 10px;
+  color: black;
+  padding: 5px;
+  outline-style: none;
+  padding: 5px 0px 5px 30px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.search i {
+  position: absolute;
+  color: black;
+  top: 7px;
+  left: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 50px;
+  height: 40px;
+  border-radius: 75%;
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.links ul a:hover {
+  color: #ff0000;
+  border-bottom: 3px solid white;
+}
+
+.s1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 740px;
+  padding: 50px;
+}
+
+.s1 .tx-s1 {
+  width: 50%;
+  background-color: #000000ad;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.s1 .tx-s1 h3 {
+  font-size: 40px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.s1 .tx-s1 p {
+  color: #e28181;
+  padding-bottom: 30px;
+  width: 380px;
+}
+
+button {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  padding: 10px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+
+button::before {
+  margin-left: auto;
+}
+
+button::after,
+button::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+button:hover::after,
+button:hover::before {
+  width: 100%;
+}
